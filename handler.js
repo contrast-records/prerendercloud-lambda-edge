@@ -91,7 +91,7 @@ const resetPrerenderCloud = () => {
   //        - when you invalid CloudFront each page load will require a new prerender call
   //          (so if you regularly invalidate even if the content hasn't changed, you're slowing
   //           things down unnecessarily)
-  // prerendercloud.set('disableServerCache', true);
+  prerendercloud.set('disableServerCache', true);
 
   // 10. blacklistPaths
   //    the viewer-request function can't see what files exist on origin so you may need this
